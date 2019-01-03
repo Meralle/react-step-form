@@ -64,4 +64,4 @@ export class FormPersonalDetails extends Component {
     }
 }
 
-export default FormPersonalDetails
+export default FormPersonalDetails;

@@ -53,4 +53,4 @@ const style= {
     margin: 15
   }
 }
-export default FormUserDetails
+export default FormUserDetails;

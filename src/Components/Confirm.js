@@ -5,7 +5,7 @@ import {List, ListItem} from 'material-ui/List';
 import RaisedButton from 'material-ui/RaisedButton';
 
 
-export class FormUserDetails extends Component {
+export class Confirm extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -17,7 +17,8 @@ export class FormUserDetails extends Component {
   };
 
   render() {
-    const { values: {firstName, lastName, email, occupation, city, bio} } = this.props;
+    const { values: 
+        { firstName, lastName, email, occupation, city, bio } } = this.props;
     return ( 
       <MuiThemeProvider>
         <React.Fragment>
@@ -65,4 +66,4 @@ const style= {
     margin: 15
   }
 }
-export default FormUserDetails
+export default Confirm;
