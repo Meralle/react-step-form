@@ -14,49 +14,49 @@ export class FormPersonalDetails extends Component {
         e.preventDefault();
         this.props.prevStep();
     }
-  render() {
-      const { values, handleChange } =this.props;
-    return (
-        <MuiThemeProvider>
-        <React.Fragment>
-          <AppBar title ="Enter personal occupation"/>
-            <TextField 
-              hintText="Enter your occupation"
-              floatingLabelText="Occupation"
-              onChange={handleChange('occupation')} 
-              defaultValue={values.occupation}
-            /> 
-            <br/>
-            <TextField 
-              hintText="Enter your City"
-              floatingLabelText="City"
-              onChange={handleChange('city')} 
-              defaultValue={values.city}
-            /> 
-            <br/>
-            <TextField 
-              hintText="Enter your Bio"
-              floatingLabelText="Bio"
-              onChange={handleChange('bio')} 
-              defaultValue={values.bio}
-            /> 
-            <br/>
-            <RaisedButton 
-              label="Continue"
-              primary={true}
-              style={style.button}
-              onClick={this.continue}
-            />
-            <RaisedButton 
-              label="Back"
-              primary={true}
-              style={style.button}
-              onClick={this.back}
-            />
-        </React.Fragment>
-      </MuiThemeProvider>
-    )
-  }
+    render() {
+        const { values, handleChange } =this.props;
+        return (
+            <MuiThemeProvider>
+                <React.Fragment>
+                    <AppBar title ="Enter Personal Details"/>
+                        <TextField 
+                            hintText="Enter your occupation"
+                            floatingLabelText="Occupation"
+                            onChange={handleChange('occupation')} 
+                            defaultValue={values.occupation}
+                        /> 
+                        <br/>
+                        <TextField 
+                            hintText="Enter your City"
+                            floatingLabelText="City"
+                            onChange={handleChange('city')} 
+                            defaultValue={values.city}
+                        /> 
+                        <br/>
+                        <TextField 
+                            hintText="Enter your Bio"
+                            floatingLabelText="Bio"
+                            onChange={handleChange('bio')} 
+                            defaultValue={values.bio}
+                        /> 
+                        <br/>
+                        <RaisedButton 
+                            label="Continue"
+                            primary={true}
+                            style={style.button}
+                            onClick={this.continue}
+                        />
+                        <RaisedButton 
+                            label="Back"
+                            primary={false}
+                            style={style.button}
+                            onClick={this.back}
+                    />
+                </React.Fragment>
+            </MuiThemeProvider>
+        )
+    }
 }
   const style= {
     button: {
